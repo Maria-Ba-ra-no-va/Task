@@ -1,0 +1,41 @@
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    margin: 100px auto;
+}
+
+img {
+    display: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.animated {
+    animation: anim 10s linear;
+}
+
+@keyframes anim {
+    0% {
+        left: 0;
+    }
+
+    25% {
+        left: 100px;
+    }
+
+    50% {
+        left: 200px;
+    }
+
+    75% {
+        left: 300px;
+    }
+
+    100% {
+        left: 400px;
+    }
+}
